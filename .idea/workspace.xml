@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="10eedd0b-c859-4021-8ed4-4b384650d804" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ITMO-_WEBDEV_2022_ARTUR.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/card UI/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/card UI/public/vite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/card UI/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Новая папка/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Новая папка/counter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Новая папка/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Новая папка/javascript.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Новая папка/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Новая папка/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Новая папка/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Новая папка/postcss.config.cjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Новая папка/public/vite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Новая папка/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Новая папка/tailwind.config.cjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Новая папка/vite.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Новая папка/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2FgFg3vVftYzRrwubEvd1w9GAfx" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Users/ITMO-_WEBDEV_2022_ARTUR/card UI&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\ITMO-_WEBDEV_2022_ARTUR\card UI" />
+      <recent name="D:\Users\ITMO-_WEBDEV_2022_ARTUR\Новая папка" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Users\ITMO-_WEBDEV_2022_ARTUR\card UI" />
+      <recent name="D:\Users\ITMO-_WEBDEV_2022_ARTUR\Новая папка" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="10eedd0b-c859-4021-8ed4-4b384650d804" name="Changes" comment="" />
+      <created>1664905930481</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664905930481</updated>
+      <workItem from="1664905932351" duration="23481000" />
+      <workItem from="1665078154077" duration="415000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
