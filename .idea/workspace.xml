@@ -4,29 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10eedd0b-c859-4021-8ed4-4b384650d804" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ITMO-_WEBDEV_2022_ARTUR.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/card UI/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/card UI/public/vite.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/card UI/yarn.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Новая папка/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Новая папка/counter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Новая папка/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Новая папка/javascript.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Новая папка/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Новая папка/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Новая папка/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Новая папка/postcss.config.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Новая папка/public/vite.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Новая папка/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Новая папка/tailwind.config.cjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Новая папка/vite.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Новая папка/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="10eedd0b-c859-4021-8ed4-4b384650d804" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1664905930481</updated>
       <workItem from="1664905932351" duration="23481000" />
-      <workItem from="1665078154077" duration="415000" />
+      <workItem from="1665078154077" duration="796000" />
     </task>
     <servers />
   </component>
