@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import { setupCounter } from './counter.js'
@@ -21,3 +22,14 @@ document.querySelector('#app').innerHTML = `
 `
 
 setupCounter(document.querySelector('#counter'))
+=======
+import { createApp } from "vue";
+import App from "./App.vue";
+// import './index.css'
+// {
+//     "name": "my-package",
+//     "scripts": {
+//     "build": "babel src -d lib",
+//         "test": "jest"
+// }
+>>>>>>> Home_work
