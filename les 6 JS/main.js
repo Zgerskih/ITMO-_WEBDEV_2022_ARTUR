@@ -17,7 +17,7 @@ rendertodo(listOfTodos, domListOfTodos);
 disableButtonWhenTextInvalid(domBtnCreateTodo, domInputTodoTitle.value);
 
 function onBtnCreateTodoClick(e) {
-  // console.log("> domBtnCreateTodo -> handle(click)", e);
+  console.log("> domBtnCreateTodo -> handle(click)", e);
   const todoTitleValueFromDomInput = domInputTodoTitle.value;
   // console.log(">domBtnCreateTodo -> todoInputTodoTitleValue:", todoTitleValueFromDomInput);
   if (isStringNotNumberAndNotEmpty(todoTitleValueFromDomInput)) {
