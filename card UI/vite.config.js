@@ -2,6 +2,6 @@
 export default {
   // config options
   server:{
-    port: 8098
+    port: 8099
   }
 }
