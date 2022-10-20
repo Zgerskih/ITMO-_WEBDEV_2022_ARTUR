@@ -1,11 +1,11 @@
 import TodoVO from './src/model/vos/TodoVO.js';
 
-const domInputTodoTitle = document.getElementById('inputTodoTitle');
+const domInpTodoTitle = document.getElementById('inpTodoTitle');
 const domBtnCreateTodo = document.getElementById('btnCreateTodo');
 const domListOfTodos = document.getElementById('listOfTodos');
 
 domBtnCreateTodo.addEventListener('click', onBtnCreateTodoClick);
-domBtnCreateTodo.addEventListener('keyup', onInputTodoTitleKeyup);
+domInpTodoTitle.addEventListener('keyup', onInpTodoTitleKeyup);
 
 const LOCAL_LIST_OF_TODOS = 'listOfTodos';
 
@@ -13,58 +13,75 @@ const listOfTodos = localStorageListOf(LOCAL_LIST_OF_TODOS);
 
 console.log('> Initial value -> listOfTodos', listOfTodos);
 
-rendertodo(listOfTodos, domListOfTodos);
-disableButtonWhenTextInvalid(domBtnCreateTodo, domInputTodoTitle.value);
+renderTodoListInContainer(listOfTodos, domListOfTodos);
+disableButtonWhenTextInvalid(
+  domBtnCreateTodo,
+  domInpTodoTitle.value,
+  isStringNotNumberAndNotEmpty,
+  {
+    textWhenEnabled: 'Create',
+    textWhenDisabled: 'Enter text',
+  }
+);
 
-function onBtnCreateTodoClick(e) {
-  console.log("> domBtnCreateTodo -> handle(click)", e);
-  const todoTitleValueFromDomInput = domInputTodoTitle.value;
-  // console.log(">domBtnCreateTodo -> todoInputTodoTitleValue:", todoTitleValueFromDomInput);
+function onBtnCreateTodoClick() {
+  // console.log('> domBtnCreateTodo -> handle(click)', event);
+  const todoTitleValueFromDomInput = domInpTodoTitle.value;
+  // console.log('> domBtnCreateTodo -> todoInputTitleValue:', todoTitleValueFromDomInput);
   if (isStringNotNumberAndNotEmpty(todoTitleValueFromDomInput)) {
     listOfTodos.push(TodoVO.createFromTitle(todoTitleValueFromDomInput));
-    localStorage.setItem('listOfTodos', JSON.stringify(listOfTodos));
-    rendertodo(listOfTodos, domListOfTodos);
+    localStorage.setItem(LOCAL_LIST_OF_TODOS, JSON.stringify(listOfTodos));
+    renderTodoListInContainer(listOfTodos, domListOfTodos);
   }
 }
 
-function onInputTodoTitleKeyup(event) {
-  console.log('> onInputTodoTitleKeyup:', event);
+function onInpTodoTitleKeyup(event) {
+  // console.log('> onInpTodoTitleKeyup:', event);
   const inputValue = event.currentTarget.value;
-  console.log('>onInputTodoTitleKeyup:', inputValue);
-  disableButtonWhenTextInvalid(domBtnCreateTodo, inputValue);
+  // console.log('> onInpTodoTitleKeyup:', inputValue);
+  disableButtonWhenTextInvalid(
+    domBtnCreateTodo,
+    inputValue,
+    isStringNotNumberAndNotEmpty,
+    {
+      textWhenEnabled: 'Create',
+      textWhenDisabled: 'Enter text',
+    }
+  );
 }
 
 function isStringNotNumberAndNotEmpty(value) {
-  const isvalueString = typeof value === 'string';
+  const isValueString = typeof value === 'string';
   const isValueNotNumber = isNaN(parseInt(value));
-  const result = isvalueString && isValueNotNumber && value.length > 0;
-  console.log('> validateTodoInputTitelValue -> result', {
+
+  const result = isValueString && isValueNotNumber && value.length > 0;
+
+  console.log('> isStringNotNumberAndNotEmpty -> result', {
     result,
-    isInputValueString: isvalueString,
-    isInputValueNotNumber: isValueNotNumber,
+    isInputValueString: isValueString,
+    isInputValeNotNumber: isValueNotNumber,
   });
   return result;
 }
 
-function createToDoVO(title) {
-  const todoId = Date.now().toString();
-  return new TodoVO(todoId, title);
-}
-function rendertodo(list, container) {
-  let output = '';
-  for (let index in listOfTodos) {
-    output += `<li>${listOfTodos[index].title}</li>`;
-  }
-  container.innerHTML = output;
-  domInputTodoTitle.value = 'Todo text';
-
-  console.log('> dominputTodoTitle', domInputTodoTitle, domBtnCreateTodo, domListOfTodos);
+function localStorageListOf(key) {
+  const value = localStorage.getItem(key);
+  console.log('> localStorageListOf: value =', value);
+  if (value === null) return [];
+  const parsedValue = JSON.parse(value);
+  const isParsedValueArray = Array.isArray(parsedValue);
+  return isParsedValueArray ? parsedValue : [];
 }
 
-function disableButtonWhenTextInvalid(button, text, validateFunction, { textWhenDisabled, textWhenEnabled }) {
-  if (!validateFunction) throw new Error('Validate method must be defined');
+function disableButtonWhenTextInvalid(
+  button,
+  text,
+  validateTextFunction,
+  { textWhenDisabled, textWhenEnabled } = {}
+) {
+  if (!validateTextFunction) throw new Error('Validate method must be defined');
 
-  if (validateFunction(text)) {
+  if (validateTextFunction(text)) {
     button.disabled = false;
     if (textWhenEnabled) button.textContent = textWhenEnabled;
   } else {
@@ -73,22 +90,12 @@ function disableButtonWhenTextInvalid(button, text, validateFunction, { textWhen
   }
 }
 
-function localStorageListOf(key) {
-  const value = localStorage.getItem(key);
-  console.log('> localStorageListOf: value =', value);
-
-  if (value == null) return [];
-
-  const parsedValue = JSON.parse(value);
-  const isValueArray = Array.isArray(value);
-  return isValueArray ? JSON.parse(value) : [];
+function renderTodoListInContainer(list, container) {
+  let output = '';
+  let item;
+  for (let index in list) {
+    item = list[index];
+    output += `<li>${item.title}</li>`;
+  }
+  container.innerHTML = output;
 }
-
-/**
- const greeting = "${name} |  ${surname} | ${company}"
- function welcome(name, surname = "", company = "") {
-console.log(`> welcome ${name} |  ${surname} | ${company}`);
-return greeting;
-}
- console.log(welcome("Artur"));
- */
