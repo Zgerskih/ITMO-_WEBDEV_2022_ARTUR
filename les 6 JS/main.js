@@ -83,6 +83,7 @@ function localStorageListOf(key) {
   const isValueArray = Array.isArray(value);
   return isValueArray ? JSON.parse(value) : [];
 }
+
 /**
  const greeting = "${name} |  ${surname} | ${company}"
  function welcome(name, surname = "", company = "") {
